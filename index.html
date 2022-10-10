@@ -929,14 +929,14 @@
                     <p class="screen__desc">Рекламное производство, изготовление промо-продукции, сувернирная продукция,
                         организация выставок, BTL-направление</p>
                     <form action="#" class="screen__form">
-                        <h3 class="screenn__form-title">Оставьте заявку, чтобы получить консультацию и наш менеджер вам
+                        <h3 class="screen__form-title">Оставьте заявку, чтобы получить консультацию и наш менеджер вам
                             перезвонит</h3>
-                        <div class="screen__form-input">
-                            <input type="text" placeholder="НОМЕР" required>
+                        <div class="default-form-parent-input default-form-parent-input--phone">
+                            <input class="default-form-input" type="text" placeholder="Номер" required>
                         </div>
                         <button class="screen__form-submit default-btn" type="submit">оставить заявку</button>
-                        <p class="screen__form-notify">Нажимая на кнопку, вы соглашаетесь с <br><a href="#"
-                                class="screen__form-link">Политикой Конфиденциальности</a></p>
+                        <p class="--notify">Нажимая на кнопку, вы соглашаетесь с <br><a href="#"
+                                class="--link">Политикой Конфиденциальности</a></p>
                     </form>
                 </div>
                 <div class="screen__slider">
@@ -1058,17 +1058,17 @@
                     <p class="sales__text"><b>Заполните форму ниже</b></p>
                     <p class="sales__text">Чтобы скачать прайс-лист и каталог нашей продукции в несколько кликов</p>
                     <form action="#" class="sales__form">
-                        <div class="sales__form-input sales__form-input--name">
-                            <input type="text" placeholder="ИМЯ">
+                        <div class="default-form-parent-input default-form-parent-input--name">
+                            <input class="default-form-input" type="text" placeholder="Имя">
                         </div>
-                        <div class="sales__form-input sales__form-input--phone">
-                            <input type="text" placeholder="НОМЕР" required>
+                        <div class="default-form-parent-input default-form-parent-input--phone">
+                            <input class="default-form-input" type="text" placeholder="Номер" required>
                         </div>
                         <button class="default-btn sales__form-btn">скачать прайс-лист и каталог</button>
                     </form>
                     <p class="sales__text"><span>+ получить скидку 10%</span></p>
-                    <p class="sales__notify">Нажимая на кнопку, вы соглашаетесь <br> с <a href="#"
-                            class="sales__link">Политикой Конфиденциальности</a></p>
+                    <p class="--notify">Нажимая на кнопку, вы соглашаетесь <br> с <a href="#"
+                            class="--link">Политикой Конфиденциальности</a></p>
                 </div>
             </div>
         </div>
@@ -1181,8 +1181,7 @@
                                 Выполним заказ вовремя
                             </h3>
                             <p class="advantages__block-desc">Создадим макет за 1 день и предоставим результат в
-                                заданные
-                                сроки.</p>
+                                заданные сроки.</p>
                         </div>
                         <div class="advantages__block">
                             <h3 class="advantages__block-title">
@@ -1206,6 +1205,25 @@
                 <img class="advantages__slider-img" src="images/advantages/advantages-slider-3.jpg" alt="#">
                 <img class="advantages__slider-img" src="images/advantages/advantages-slider-4.jpg" alt="#">
                 <img class="advantages__slider-img" src="images/advantages/advantages-slider-5.jpg" alt="#">
+            </div>
+        </div>
+    </section>
+    <section class="form-inline --grey-bg">
+        <div class="container">
+            <h2 class="form-inline__title">Узнайте точную стоимость выполнения вашего заказа</h2>
+            <div class="form-inline__box">
+                <div class="form-inline__group">
+                    <div class="form-inline-item default-form-parent-input default-form-parent-input--name">
+                        <input class="default-form-input" type="text" placeholder="Имя" required>
+                    </div>
+                    <div class="form-inline-item default-form-parent-input default-form-parent-input--phone">
+                        <input class="default-form-input" type="text" placeholder="Номер" required>
+                    </div>
+                    <div class="form-inline-item">
+                        <button type="submit" class="default-btn form-inline__button">узнать стоимость</button>
+                    </div>
+                </div>
+                <p class="form-inline__notify --notify">Нажимая на кнопку, вы соглашаетесь с <a href="#" class="--link">Политикой Конфиденциальности</a></p>
             </div>
         </div>
     </section>
