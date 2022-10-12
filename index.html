@@ -31,6 +31,7 @@
 
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -1201,11 +1202,21 @@
         <div class="advantages__gallery --grey-bg">
             <h2 class="advantages__gallery-title">наше производство</h2>
             <div class="advantages__slider">
-                <img class="advantages__slider-img" src="images/advantages/advantages-slider-1.jpg" alt="#">
-                <img class="advantages__slider-img" src="images/advantages/advantages-slider-2.jpg" alt="#">
-                <img class="advantages__slider-img" src="images/advantages/advantages-slider-3.jpg" alt="#">
-                <img class="advantages__slider-img" src="images/advantages/advantages-slider-4.jpg" alt="#">
-                <img class="advantages__slider-img" src="images/advantages/advantages-slider-5.jpg" alt="#">
+                <a href="images/advantages/advantages-slider-1.jpg" data-fancybox="gallery" class="advantages__slide">
+                    <img class="advantages__slider-img" src="images/advantages/advantages-slider-1.jpg" alt="#">
+                </a>
+                <a href="images/advantages/advantages-slider-2.jpg" data-fancybox="gallery" class="advantages__slide">
+                    <img class="advantages__slider-img" src="images/advantages/advantages-slider-2.jpg" alt="#">
+                </a>
+                <a href="images/advantages/advantages-slider-3.jpg" data-fancybox="gallery" class="advantages__slide">
+                    <img class="advantages__slider-img" src="images/advantages/advantages-slider-3.jpg" alt="#">
+                </a>
+                <a href="images/advantages/advantages-slider-4.jpg" data-fancybox="gallery" class="advantages__slide">
+                    <img class="advantages__slider-img" src="images/advantages/advantages-slider-4.jpg" alt="#">
+                </a>
+                <a href="images/advantages/advantages-slider-5.jpg" data-fancybox="gallery" class="advantages__slide">
+                    <img class="advantages__slider-img" src="images/advantages/advantages-slider-5.jpg" alt="#">
+                </a>
             </div>
         </div>
     </section>
@@ -1392,9 +1403,82 @@
                 <h2 class="banner__title">
                     Ваш заказ будет сопровождать персональный менеджер
                 </h2>
-                <p class="banner__desc">Я буду присылать вам фото и видео процесса с производства и держать в курсе статуса заказа</p>
+                <p class="banner__desc">Я буду присылать вам фото и видео процесса с производства и держать в курсе
+                    статуса заказа</p>
                 <a href="#form" class="banner__btn default-btn">получите расчет стоимости в 3-х вариантах</a>
             </div>
+        </div>
+    </section>
+    <section class="orders">
+        <div class="container">
+            <div class="orders__top">
+                <div class="orders__title">
+                    <div class="orders__title-item">
+                        <img class="orders__title-image" src="images/icons/star.png" alt="#">
+                    </div>
+                    <div class="orders__title-item">
+                        <h2 class="orders__title-text"><span class="--orange">Более 1000+</span>
+                            <br> выполненных заказов
+                        </h2>
+                        <p class="orders__title-desc">
+                            <svg width="27" height="28" viewBox="0 0 27 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.7628 6.31222C9.58138 6.95526 9.14502 8.43399 9.78806 9.61542L10.6358 11.1678C10.3403 11.2039 10.1286 11.2785 9.85122 11.4295C9.22451 11.7706 8.80947 12.3699 8.65166 13.0122L8.10033 13.3067C6.52534 14.1639 5.94342 16.136 6.80068 17.7109L7.18875 18.4239C9.42252 22.5279 13.2254 23.4562 16.3853 21.7362C18.56 20.5526 19.856 18.9756 20.4532 16.9519C20.8928 15.4621 20.9363 14.2092 20.8385 11.3993C20.8345 11.273 20.7957 11.161 20.7355 11.0505C20.0591 9.80776 18.5917 9.44475 17.4324 10.0758C16.9005 10.3653 16.5072 10.7651 16.2155 11.2464L14.066 7.28696C13.423 6.10554 11.9442 5.66918 10.7628 6.31222ZM11.539 7.7382C11.9325 7.52398 12.4258 7.66954 12.64 8.06311L15.7446 13.767C15.908 14.0875 16.4086 14.3502 16.8457 14.0919C17.2828 13.8337 17.2747 13.3843 17.2736 13.3396C17.2684 13.1927 17.2999 12.9177 17.3931 12.5999C17.54 12.1022 17.795 11.7268 18.2085 11.5017C18.5643 11.3081 18.9837 11.3672 19.2331 11.6862C19.4672 16.4802 18.5573 18.7343 15.6092 20.3103C13.282 21.5548 10.4026 20.9325 8.61473 17.6478L8.22666 16.9348C7.79783 16.1469 8.08863 15.1615 8.87648 14.7327L9.26456 15.4457C9.47878 15.8392 9.97205 15.9848 10.3656 15.7706C10.7592 15.5563 10.9048 15.0631 10.6905 14.6695L10.3025 13.9565C10.0882 13.5629 10.2338 13.0697 10.6274 12.8554C11.0209 12.6412 11.5142 12.7868 11.7284 13.1804L12.1165 13.8934C12.3307 14.2869 12.824 14.4325 13.2176 14.2183C13.6112 14.004 13.7567 13.5108 13.5425 13.1172L13.1544 12.4042L12.3418 10.9112L11.214 8.83927C10.9998 8.44569 11.1454 7.95242 11.539 7.7382Z"
+                                    fill="#DEDEDE" />
+                            </svg>
+                            Кликните по фото, чтобы раскрыть его на полный экран
+                        </p>
+                    </div>
+                </div>
+                <div class="orders__button">
+                    <a href="#" class="orders__link default-btn default-btn--orange">больше работ</a>
+                </div>
+            </div>
+        </div>
+        <div class="orders__slider">
+            <a href="images/orders-slider/1.jpg" data-fancybox="gallery" class="orders__slide">
+                <img src="images/orders-slider/1.jpg" alt="#" class="orders__image">
+            </a>
+            <a href="images/orders-slider/2.jpg" data-fancybox="gallery" class="orders__slide">
+                <img src="images/orders-slider/2.jpg" alt="#" class="orders__image">
+            </a>
+            <a href="images/orders-slider/3.jpg" data-fancybox="gallery" class="orders__slide">
+                <img src="images/orders-slider/3.jpg" alt="#" class="orders__image">
+            </a>
+            <a href="images/orders-slider/4.jpg" data-fancybox="gallery" class="orders__slide">
+                <img src="images/orders-slider/4.jpg" alt="#" class="orders__image">
+            </a>
+            <a href="images/orders-slider/5.jpg" data-fancybox="gallery" class="orders__slide">
+                <img src="images/orders-slider/5.jpg" alt="#" class="orders__image">
+            </a>
+            <a href="images/orders-slider/6.jpg" data-fancybox="gallery" class="orders__slide">
+                <img src="images/orders-slider/6.jpg" alt="#" class="orders__image">
+            </a>
+            <a href="images/orders-slider/7.jpg" data-fancybox="gallery" class="orders__slide">
+                <img src="images/orders-slider/7.jpg" alt="#" class="orders__image">
+            </a>
+            <a href="images/orders-slider/8.jpg" data-fancybox="gallery" class="orders__slide">
+                <img src="images/orders-slider/8.jpg" alt="#" class="orders__image">
+            </a>
+            <a href="images/orders-slider/9.jpg" data-fancybox="gallery" class="orders__slide">
+                <img src="images/orders-slider/9.jpg" alt="#" class="orders__image">
+            </a>
+            <a href="images/orders-slider/10.jpg" data-fancybox="gallery" class="orders__slide">
+                <img src="images/orders-slider/10.jpg" alt="#" class="orders__image">
+            </a>
+            <a href="images/orders-slider/11.jpg" data-fancybox="gallery" class="orders__slide">
+                <img src="images/orders-slider/11.jpg" alt="#" class="orders__image">
+            </a>
+            <a href="images/orders-slider/12.jpg" data-fancybox="gallery" class="orders__slide">
+                <img src="images/orders-slider/12.jpg" alt="#" class="orders__image">
+            </a>
+            <a href="images/orders-slider/13.jpg" data-fancybox="gallery" class="orders__slide">
+                <img src="images/orders-slider/13.jpg" alt="#" class="orders__image">
+            </a>
+            <a href="images/orders-slider/14.jpg" data-fancybox="gallery" class="orders__slide">
+                <img src="images/orders-slider/14.jpg" alt="#" class="orders__image">
+            </a>
         </div>
     </section>
 
@@ -1403,6 +1487,7 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 
