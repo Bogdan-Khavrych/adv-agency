@@ -2535,7 +2535,7 @@
             </div>
         </div>
     </section>
-    <section hidden class="orders">
+    <section class="orders">
         <div class="container">
             <div class="orders__top">
                 <div class="orders__title">
@@ -2548,8 +2548,8 @@
                         </h2>
                     </div>
                 </div>
-                <div class="orders__button">
-                    <a href="works.html" class="orders__link default-btn default-btn--orange">больше работ<span
+                <div class="orders__button --desktop">
+                    <a href="works.html" class="orders__link default-btn default-btn--orange">посмотреть больше работ<span
                             class="--flare --flare-delay-1"></span></a>
                 </div>
             </div>
@@ -2598,21 +2598,24 @@
                 <img src="images/orders-slider/14.jpg" alt="#" class="orders__image">
             </div>
         </div>
+        <div class="orders__button --mobile">
+            <a href="works.html" class="orders__link default-btn default-btn--orange">посмотреть больше работ<span class="--flare --flare-delay-1"></span></a>
+        </div>
     </section>
-    <section hidden class="form-inline">
-        <div class="container">
+    <section class="form-inline">
+        <div class="container form-inline__inner">
             <div class="form-inline__wrap">
-                <svg class="form-inline__rhombus" width="148" height="155" viewBox="0 0 148 155" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M47.7196 7.64629C58.6963 -0.342617 73.1012 -1.86867 85.5081 3.64296L121.187 19.4929C133.594 25.0045 142.118 36.7165 143.548 50.217L147.661 89.0408C149.091 102.541 143.211 115.779 132.234 123.768L100.668 146.742C89.6914 154.731 75.2865 156.257 62.8796 150.745L27.2007 134.896C14.7938 129.384 6.26972 117.672 4.83946 104.171L0.726456 65.3476C-0.703798 51.8471 5.17705 38.609 16.1537 30.6201L47.7196 7.64629Z"
-                        fill="#7B48E8" />
+                <svg class="form-inline__rhombus --desktop" width="148" height="155" viewBox="0 0 148 155" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M47.7196 7.64629C58.6963 -0.342617 73.1012 -1.86867 85.5081 3.64296L121.187 19.4929C133.594 25.0045 142.118 36.7165 143.548 50.217L147.661 89.0408C149.091 102.541 143.211 115.779 132.234 123.768L100.668 146.742C89.6914 154.731 75.2865 156.257 62.8796 150.745L27.2007 134.896C14.7938 129.384 6.26972 117.672 4.83946 104.171L0.726456 65.3476C-0.703798 51.8471 5.17705 38.609 16.1537 30.6201L47.7196 7.64629Z"
+                    fill="#7B48E8" />
                 </svg>
-                <img class="form-inline__bg" src="images/form-inline-bg.png" alt="#">
+                <img class="form-inline__bg --desktop" src="images/form-inline-bg.png" alt="#">
                 <h2 class="form-inline__title">Оставьте заявку и получите расчет стоимости</h2>
                 <p class="form-inline__desc --desktop">Наш менеджер позвонит вам, чтобы уточнить детали и расчитает стоимость в
                     течение 20 минут</p>
-                <div class="form-inline__box">
+                <div class="form-inline__box --desktop">
                     <form action="#" class="form-inline__group">
                         <div class="form-inline-item default-form-parent-input default-form-parent-input--name">
                             <input class="default-form-input" type="text" placeholder="Имя" required>
@@ -2621,17 +2624,19 @@
                             <input class="default-form-input" type="text" placeholder="Номер" required>
                         </div>
                         <div class="form-inline-item">
-                            <button type="submit" class="default-btn form-inline__button">узнать стоимость <span
+                            <button type="submit" class="default-btn form-inline__button">оставить заявку<span
                                     class="--flare"></span></button>
                         </div>
                     </form>
                     <p class="form-inline__notify --notify">Нажимая на кнопку, вы соглашаетесь с <a href="#"
                             class="--link">Политикой Конфиденциальности</a></p>
                 </div>
+                <button data-fancybox data-src="#popup-form-request" class="default-btn form-inline__button --mobile">оставить заявку<span
+                    class="--flare"></span></button>
             </div>
         </div>
     </section>
-    <section hidden id="feedback" class="feedback">
+    <section id="feedback" class="feedback">
         <div class="container">
             <h2 class="feedback__title">Отзывы <span class="--orange">наших</span> клиентов</h2>
         </div>
@@ -2790,7 +2795,7 @@
             </div>
         </div>
     </section>
-    <section hidden class="offer" id="offer">
+    <section class="offer" id="offer">
         <div class="container">
             <div class="offer__box">
                 <div class="offer__wrap">
@@ -2800,7 +2805,7 @@
                         <p class="offer__desc">Даем гарантию лучшей цены. Пришлите расчет стоимости другой компании и <b
                                 class="offer__bold">получите более выгодное предложение</b></p>
                     </div>
-                    <div class="offer__block">
+                    <div class="offer__block --desktop">
                         <form action="#" class="offer__form">
                             <div class="default-form-parent-input default-form-parent-input--name">
                                 <input class="default-form-input" type="text" placeholder="Имя">
@@ -2813,8 +2818,10 @@
                         </form>
                     </div>
                 </div>
-                <p class="--notify">Нажимая на кнопку, вы соглашаетесь с <a href="#" class="--link">Политикой
+                <p class="--notify --desktop">Нажимая на кнопку, вы соглашаетесь с <a href="#" class="--link">Политикой
                         Конфиденциальности</a></p>
+                <button data-fancybox data-src="#popup-form-request" class="default-btn offer__form-btn --mobile">получите расчет <br> стоимости в 3-х
+                    вариантах <span class="--flare"></span></button>
             </div>
         </div>
     </section>
